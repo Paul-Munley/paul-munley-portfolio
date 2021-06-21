@@ -8,14 +8,14 @@ import Layout from "./layout/Layout";
 function App() {
   return (
     <Layout>
-      {/* <Switch>
+      <Switch>
         <Route path="/">
           <Homepage />
         </Route>
         <Route exact path="*">
           <p>page not found</p>
         </Route>
-      </Switch> */}
+      </Switch>
     </Layout>
   );
 }
