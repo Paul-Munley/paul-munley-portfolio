@@ -12,6 +12,7 @@
 .header ul {
   list-style: none;
   width: 35%;
+  min-width: 410px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,6 +20,28 @@
 
 .header a {
   text-decoration: none;
-  color: white;
+  color: #6495ed;
   font-size: 1.25rem;
+  transition: color 200ms linear;
+}
+
+/* Hover and current page nav bar styling */
+.header a.active,
+.header a:hover {
+  color: white;
+  transition: color 200ms linear;
+}
+
+@media only screen and (max-width: 430px) {
+  .logo {
+    display: none;
+  }
+
+  .header ul {
+    justify-content: center;
+  }
+
+  .header li {
+    margin: 0 0.4rem;
+  }
 }

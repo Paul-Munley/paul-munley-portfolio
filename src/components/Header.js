@@ -1,25 +1,35 @@
 import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
-import logo from "../assets/circle-cropped.png";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
     <div className={classes.header}>
       <ul>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink exact to="/" activeClassName={classes.active}>
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about" activeClassName={classes.active}>
+            About
+          </NavLink>
+        </li>
+        <li className={classes.logo}>
+          <NavLink to="/">
+            <img src={logo} height="60px" />
+          </NavLink>
         </li>
         <li>
-          <img src={logo} height="60px" />
+          <NavLink to="/portfolio" activeClassName={classes.active}>
+            Portfolio
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/portfolio">Portfolio</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact" activeClassName={classes.active}>
+            Contact
+          </NavLink>
         </li>
       </ul>
     </div>
