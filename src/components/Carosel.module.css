@@ -28,7 +28,8 @@
 
 .image1 {
   position: absolute;
-  transform: translateX(-60vh);
+  /* transform: translateX(-60vh); */
+  transition: transform 2s ease-in;
   height: 8vh;
   width: 100%;
   background-color: black;
@@ -36,7 +37,8 @@
 
 .image2 {
   position: absolute;
-  transform: translateX(0vh);
+  /* transform: translateX(0vh); */
+  transition: transform 2s ease-in;
   height: 8vh;
   width: 100%;
   background-color: violet;
@@ -44,7 +46,8 @@
 
 .image3 {
   position: absolute;
-  transform: translateX(60vh);
+  /* transform: translateX(60vh); */
+  transition: transform 2s ease-in;
   height: 8vh;
   width: 100%;
   background-color: blue;
@@ -52,7 +55,8 @@
 
 .image4 {
   position: absolute;
-  transform: translateX(120vh);
+  /* transform: translateX(120vh); */
+  transition: transform 2s ease-in;
   height: 8vh;
   width: 100%;
   background-color: green;
