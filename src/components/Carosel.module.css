@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  margin: 1.5rem auto;
+  background-color: brown;
+  width: 60vh;
+  height: 50vh;
+}
+
+.leftArrow {
+  position: absolute;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  top: 22.407vh;
+  margin-left: 0.5rem;
+}
+
+.rightArrow {
+  position: absolute;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  top: 22.407vh;
+  right: 0;
+  margin-right: 0.5rem;
+}
+
+.image1 {
+  position: absolute;
+  transform: translateX(-60vh);
+  height: 8vh;
+  width: 100%;
+  background-color: black;
+}
+
+.image2 {
+  position: absolute;
+  transform: translateX(0vh);
+  height: 8vh;
+  width: 100%;
+  background-color: violet;
+}
+
+.image3 {
+  position: absolute;
+  transform: translateX(60vh);
+  height: 8vh;
+  width: 100%;
+  background-color: blue;
+}
+
+.image4 {
+  position: absolute;
+  transform: translateX(120vh);
+  height: 8vh;
+  width: 100%;
+  background-color: green;
+}
