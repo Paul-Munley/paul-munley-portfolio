@@ -1,5 +1,7 @@
+import Portfolio1 from "../components/portfolio/Portfolio1";
+
 const Portfolio = () => {
-  return <p>Portfolio!</p>;
+  return <Portfolio1 />;
 };
 
 export default Portfolio;

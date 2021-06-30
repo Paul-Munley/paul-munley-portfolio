@@ -1,9 +1,9 @@
 .card {
-  background-color: #e6c99f;
+  background-color: #e0e0e0;
   margin: 2rem;
-  border: 1px solid transparent;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   box-shadow: 0.15rem 0.15rem 0.3rem black;
-  border-radius: 0.25rem;
 }
 
 .about {
@@ -108,6 +108,7 @@ h1 {
   }
 }
 
+/* Media query styling for smaller screen with card on outside */
 @media only screen and (max-width: 420px) {
   .card {
     margin: 0;

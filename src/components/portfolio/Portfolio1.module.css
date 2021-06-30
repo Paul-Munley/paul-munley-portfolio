@@ -1,0 +1,106 @@
+.container {
+  margin: 4rem 2rem;
+  padding: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: box-shadow 300ms;
+}
+
+.container:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  cursor: pointer;
+}
+
+.portfolioText {
+  width: 50%;
+}
+
+.portfolioSkills {
+  margin-top: 1rem;
+  list-style-position: inside;
+}
+
+.portfolioImages {
+  text-align: center;
+  width: 35%;
+  flex-wrap: wrap;
+}
+
+.portfolioImage {
+  width: 100%;
+  height: auto;
+}
+
+.iconLinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Resizing Image to make it line up better with rest of the portfolio card */
+
+@media only screen and (min-width: 2050px) {
+  .portfolioImage {
+    width: 80%;
+  }
+}
+
+/* Wrapping Image as screen size start to sqush content too much */
+@media only screen and (max-width: 1050px) {
+  .container {
+    margin: 0;
+    padding: 3rem 0;
+  }
+
+  .portfolioImages {
+    width: 100%;
+  }
+
+  .portfolioImage {
+    margin-top: 3rem;
+    max-width: 70%;
+    min-width: 60%;
+  }
+}
+
+/* Moving around text and skill bullets in portfolio card as this was looking a little of as the page got smaller */
+@media only screen and (max-width: 840px) {
+  .container {
+    padding: 3rem 1rem;
+  }
+
+  .portfolioText {
+    width: 100%;
+  }
+
+  .portfolioSkills {
+    text-align: start;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolioImages {
+    width: 531px;
+    overflow-x: hidden;
+  }
+
+  .portfolioText {
+    text-align: center;
+  }
+
+  .iconLinks {
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .iconLinks img {
+    margin: 0 2rem;
+  }
+}
